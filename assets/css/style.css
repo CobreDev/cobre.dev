@@ -131,7 +131,14 @@
     .navbar {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+    }
 
+    .card {
+        border-radius: 2rem;        
+    }
+
+    .btn {
+        border-radius: .75rem;
     }
     @media (prefers-color-scheme: dark) {
 
@@ -164,7 +171,7 @@
         }
 
         .card {
-            background-color: #343a40;
+            background-color: #262B41;
             color: #FFFFFF;
         }
 

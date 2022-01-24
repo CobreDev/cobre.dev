@@ -3626,8 +3626,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 .card-img-top {
     width: 100%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px)
+    border-top-left-radius: calc(2rem - 1px);
+    border-top-right-radius: calc(2rem - 1px)
 }
 .card-img-bottom {
     width: 100%;
