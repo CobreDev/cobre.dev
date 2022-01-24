@@ -76,13 +76,17 @@
     }
 
     .navbar-dark .navbar-brand {
-        color:#743E00;
+        color:#fff;
+        /* color:#743E00; */
         font-weight: 500;
         font-size: x-large;
     }
 
     .text-cobra {
-        color: #743E00;
+        /* color: #743E00; */
+        color: #fff;
+        text-shadow: 0 0 100px #743E00;
+
     }
 
     .nav-link {
@@ -198,7 +202,8 @@
         }
 
         .nav-link {
-            color: #894C34;
+            color: #fff;
+            /* color: #894C34; */
         }
     
         .nav-link:hover {
