@@ -76,15 +76,13 @@
     }
 
     .navbar-dark .navbar-brand {
-        color:#fff;
-        /* color:#743E00; */
+        color:#743E00;
         font-weight: 500;
         font-size: x-large;
     }
 
     .text-cobra {
-        /* color: #743E00; */
-        color: #fff;
+        color: #743E00;
         text-shadow: 0 0 100px #743E00;
 
     }
