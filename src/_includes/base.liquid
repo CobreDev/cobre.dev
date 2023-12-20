@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-roboto bg-stone-900 text-stone-200 underline-offset-4 flex flex-col min-h-screen justify-between">
+    <main class="space-y-8 p-8 grow shrink-0 basis-auto sm:px-20 md:px-32 lg:mx-auto lg:my-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl w-full">
+      {{ content }}
+    </main>
+    {% include "_footer.liquid" %}
+  </body>
+</html>

@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --red: #ff453a;
+    --orange: #ff9f0a;
+    --green: #00cc66;
+    --mint: #66d4cf;
+    --blue: #0a84ff;
+    --purple: #df5af2;
+    --pink: #ff375f;
+}
+
+@layer base {
+    h1 {
+        @apply text-xl;
+    }
+
+    h2 {
+        @apply text-lg;
+    }
+
+    h3 {
+        @apply text-sm;
+    }
+
+    /* ... */
+}
+
+/* .animate {
+    --sal-duration: 600ms;
+    --sal-easing: 'ease-out-back';
+ } */
+
+/*.dir {
+    color: var(--green);
+} */
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @apply gap-6
+}
+
+.flutter {
+    color: #20bcfd;
+}
+
+.eleventy {
+    color: #fff;
+    background-color: #212121;
+}
+
+.tailwind {
+    color: #38bdf8;
+}
+
+.arduino {
+    color: #008184;
+}
+
+.liquid {
+    color: #3399cc;
+}
+
+.nodejs {
+    color: #5aaa46;
+}
+
+.typescript {
+    color: #3178c6;
+}
+
+.html {
+    color: #eb5827;
+}
+
+.css {
+    color: #2758eb;
+}
+
+.latex {
+    color: #008080;
+}
+
+.rust {
+    color: #f74c00;
+}
+
+small {
+    @apply text-stone-500;
+}
+
+ul {
+    list-style: none;
+    @apply lg:columns-2;
+    @apply xl:columns-3;
+}
+
+ul li:before {
+    content: '→ ';
+    color: var(--green);
+}
+
+.green {
+    color: var(--green);
+}
+
+em {
+    color: var(--green);
+}
+
+a:link {
+    text-decoration-color: var(--blue);
+}
+
+a {
+    text-decoration-color: transparent;
+    text-decoration: underline;
+    transition: text-decoration-color 0.3s ease;
+}
+
+a:visited {
+    text-decoration-color: var(--purple);
+}
+
+a:hover {
+    text-decoration-color: var(--red);
+}
+
+/*
+Arrows
+*/
+
+.arrow-external:after {
+    content: '↗';
+}
