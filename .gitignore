@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules/
+_site/
 
 # Optional npm cache directory
 .npm
