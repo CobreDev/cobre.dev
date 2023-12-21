@@ -1,7 +1,6 @@
 ---
 title: About me 🙋‍♂️
 layout: subpage.liquid
-permalink: about.html
 ---
 
 Hello! I'm *Peter Bossev*, a 14 y/o highschool *sophomore* in the USA. I have a strong passion for both *coding* 👨‍💻 and *physics* 🌌, and plan to start competitive *powerlifting* 🏋️‍♂️ (163/118/160kg@97kg) before I turn 16. 
