@@ -154,6 +154,7 @@ a:link {
 }
 
 a {
+    @apply text-stone-300;
     text-decoration-color: transparent;
     text-decoration: underline;
     transition: all 0.3s ease;
