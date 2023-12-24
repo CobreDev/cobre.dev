@@ -1,8 +1,11 @@
----
-layout: boiler.liquid
----
-
-<main class="space-y-8 p-8 grow shrink-0 basis-auto sm:px-20 md:px-32 lg:mx-auto lg:my-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl w-full">
-  {{ content }}
-</main>
-{% include "_footer.liquid" %}
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+  {% include "_header.liquid" %}
+  <body class="font-roboto bg-stone-900 text-stone-200 underline-offset-4 flex flex-col min-h-screen justify-between">
+    <main class="space-y-8 p-8 grow shrink-0 basis-auto sm:px-20 md:px-32 lg:mx-auto lg:my-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl w-full">
+      {{ content }}
+    </main>
+    {% include "_footer.liquid" %}
+    {{ scripts }}
+  </body>
+</html>

@@ -1,6 +1,6 @@
 ---
 title: Peter Bossev 👋
-layout: homepage.liquid
+layout: base.liquid
 ---
 <div class="space-y-2">
   <div class="row mt-8 mb-4">
@@ -11,7 +11,7 @@ layout: homepage.liquid
   </div>
   <p>A highschool student with a passion for
     <em>coding</em>
-    👨‍💻                                                                                                                                      
+    👨‍💻                                                                                                                                                
     and
     <em>physics</em>
     🌌. Read more
@@ -20,28 +20,18 @@ layout: homepage.liquid
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   <div class="shrink-0">
-    <h2 class="text-stone-400 mb-2 text-sm">Notes 📝 🚧W.I.P🚧</h3>
+    <h2 class="text-stone-400 mb-2 text-sm">Notes 📝</h2>
     <div class="space-y-2">
-      <div class="row">
-        <a href="notes/">AP Calculus BC 🧮</a>
-        <p>🚧3.5GB</p>
-      </div>
-      <div class="row">
-        <a href="notes/">AP Physics C 🌠</a>
-        <p>🚧3.5GB</p>
-      </div>
-      <div class="row">
-        <a href="notes/">AP World History 🌎</a>
-        <p>🚧3.5GB</p>
-      </div>
-      <div class="row">
-        <a href="notes/">AP Biology 🧬</a>
-        <p>🚧3.5GB</p>
-      </div>
+      {%- for note in site.notes -%}
+        <div class="row">
+          <a href="{{ note.url }}">{{ note.class }}</a>
+          <p>{{ note.fsize }}</p>
+        </div>
+      {%- endfor -%}
     </div>
   </div>
   <div>
-    <h2 class="text-stone-400 mb-2 text-sm">Projects 🛠️</h3>
+    <h2 class="text-stone-400 mb-2 text-sm">Projects 🛠️</h2>
     <div class="space-y-4">
       <div>
         <a href="/">zWeather ☂️</a>
@@ -58,7 +48,7 @@ layout: homepage.liquid
     </div>
   </div>
   <div>
-    <h2 class="text-stone-400 mb-2 text-sm">Extracurriculars 🎓</h3>
+    <h2 class="text-stone-400 mb-2 text-sm">Extracurriculars 🎓</h2>
     <div class="space-y-4">
       {%- for extracurricular in collections.extracurriculars -%}
         <div>

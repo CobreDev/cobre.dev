@@ -1,6 +1,34 @@
 {
+    "notes": [
+        {
+            "class": "🚧 AP Calculus BC 🧮",
+            "url": "/assets/notes/AP_Calculus_BC.pdf",
+            "fsize": "126 KB"
+        },
+        {
+            "class": "🚧 AP Physics C 🌠",
+            "url": "/assets/notes/AP_Physics_C.pdf",
+            "fsize": "N/A"
+        },
+        {
+            "class": "🚧 AP World History 🌎",
+            "url": "/assets/notes/AP_World_History.pdf",
+            "fsize": "N/A"
+        },
+        {
+            "class": "🚧 AP Biology 🧬",
+            "url": "/assets/notes/AP_Biology.pdf",
+            "fsize": "N/A"
+        }
+    ],
     "links": [
-        {"name": "Github 🐙", "url": "https://github.com/Zlushiie"},
-        {"name": "Twitter 🐤", "url": "https://twitter.com/zlushiie"}
+        {
+            "name": "Github 🐙",
+            "url": "https://github.com/Zlushiie"
+        },
+        {
+            "name": "Twitter 🐤",
+            "url": "https://twitter.com/zlushiie"
+        }
     ]
 }
