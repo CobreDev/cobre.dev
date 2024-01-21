@@ -11,7 +11,7 @@ layout: base.liquid
   </div>
   <p>A highschool student with a passion for
     <em>coding</em>
-    👨‍💻                                                                                                                                                
+    👨‍💻                                                                                                                                                                                  
     and
     <em>physics</em>
     🌌. Read more
@@ -32,27 +32,27 @@ layout: base.liquid
   </div>
   <div>
     <h2 class="text-stone-400 mb-2 text-sm">Projects 🛠️</h2>
-    <div class="space-y-4">
-      <div>
-        <a href="/">zWeather ☂️</a>
-        <p class="text-stone-400">A minimalist weather app utilizing
-          <a href="https://flutter.dev/" class="flutter arrow-external">Flutter</a>.</p>
-      </div>
-      <div>
-        <a href="/">This Website 🔗</a>
-        <p class="text-stone-400">My own portfolio website, made with
-          <a href="https://www.11ty.dev/" class="eleventy arrow-external">11ty</a>
-          and
-          <a href="https://tailwindcss.com/" class="tailwind arrow-external">TailwindCSS</a>.</p>
-      </div>
+    <div class="space-y-2">
+      {%- for project in collections.projects -%}
+        <div>
+          <div class="row">
+            <a href="{{ project.url }}">{{ project.data.title }}</a>
+            <small class="text-stone-500">{{ project.data.dateLabel }}</small>
+          </div>
+          <p class="text-stone-400 ">{{ project.data.description }}</p>
+        </div>
+      {%- endfor -%}
     </div>
   </div>
   <div>
     <h2 class="text-stone-400 mb-2 text-sm">Extracurriculars 🎓</h2>
-    <div class="space-y-4">
+    <div class="space-y-2">
       {%- for extracurricular in collections.extracurriculars -%}
         <div>
-          <a href="{{ extracurricular.url }}">{{ extracurricular.data.title }}</a>
+          <div class="row">
+            <a href="{{ extracurricular.url }}">{{ extracurricular.data.title }}</a>
+            <small class="text-stone-500">{{ extracurricular.data.dateLabel }}</small>
+          </div>
           <p class="text-stone-400">{{ extracurricular.data.description }}</p>
         </div>
       {%- endfor -%}

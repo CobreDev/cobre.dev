@@ -13,7 +13,7 @@ Here are some technologies that I've used in the past:
 <li><a href="https://www.arduino.cc/" class="arduino arrow-external">Arduino</a></li>
 <li><a href="https://flutter.dev/" class="flutter arrow-external">Flutter</a></li>
 <li><span class="html">HTML</span> and <span class="css">CSS</span></li>
-<li><a href="https://www.11ty.dev/"" class="eleventy arrow-external">11ty</a></li>
+<li><a href="https://www.11ty.dev/" class="eleventy arrow-external">11ty</a></li>
 <li><a href="https://tailwindcss.com/" class="tailwind arrow-external">TailwindCSS</a></li>
 <li><a href="https://shopify.github.io/liquid/" class="liquid arrow-external">Liquid</a></li>
 <li><a href="https://nodejs.org/" class="nodejs arrow-external">Node.js</a></li>
