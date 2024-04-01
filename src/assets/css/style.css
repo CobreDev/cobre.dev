@@ -14,7 +14,7 @@
 
 @layer base {
     h1 {
-        @apply text-xl;
+        @apply text-2xl;
     }
 
     h2 {
@@ -79,6 +79,18 @@
     flex-direction: row;
     justify-content: space-between;
     @apply gap-6
+}
+
+.gold {
+    background-color: rgba(255, 215, 0, .2);
+}
+
+.silver {
+    background-color: rgba(192, 192, 192, .2);
+}
+
+.bronze {
+    background-color: rgba(205, 127, 50, .2);
 }
 
 .flutter {
