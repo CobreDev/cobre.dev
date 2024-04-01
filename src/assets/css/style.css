@@ -73,12 +73,31 @@
     }
 }
 
-
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @apply gap-6
+    gap: 1.5rem;
+}
+
+tr td {
+    padding-right: 1rem;
+}
+
+table {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    white-space: nowrap;
+}
+
+thead {
+    border-bottom-width: 1px;
+    @apply border-stone-700;
+}
+
+div:has(> table) {
+    overflow-x: auto;
 }
 
 .gold {

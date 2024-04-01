@@ -29,6 +29,10 @@
         {
             "name": "Gmail 📮",
             "url": "mailto:peterbossev@gmail.com"
+        },
+        {
+            "name": "X (Twitter) 🐤",
+            "url": "https://twitter.com/pbossev"
         }
     ]
 }
