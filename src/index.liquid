@@ -7,11 +7,13 @@ layout: base.liquid
     <h1>Peter Bossev
       <span class="wave">👋</span>
     </h1>
-  {% comment %} <a href="{{ '/assets/CV.pdf' | url }}" class="text-2xl">CV 📕</a> {% endcomment %}
+    <h1>
+      <a href="{{ '/assets/CV.pdf' | url }}" class="text-2xl">CV 📕</a>
+    </h1>
   </div>
   <p>A highschool student with a passion for
     <em>coding</em>
-    👨‍💻                                                                                                                                                                                                                  
+    👨‍💻                                                                                                                                                                                                                            
     and
     <em>physics</em>
     🌌. Read more
@@ -55,10 +57,10 @@ layout: base.liquid
   {% comment %} , or follow me elsewhere on the internet {% endcomment %}
   </p>
 {% comment %} <ul class="columns-1 pl-8 pt-4">
-          {%- for link in site.links -%}
-            <li class="pb-2">
-              <a href="{{ link.url }}">{{ link.name }}</a>
-            </li>
-          {%- endfor -%}
+                              {%- for link in site.links -%}
+                                <li class="pb-2">
+                                  <a href="{{ link.url }}">{{ link.name }}</a>
+                                </li>
+                              {%- endfor -%}
   </ul> {% endcomment %}
 </div>
