@@ -3,9 +3,9 @@ title: About me 🙋‍♂️
 layout: subpage.liquid
 ---
 
-Hello! I'm *Peter Bossev*, a 15 y/o highschool *sophomore* in the USA. I have a strong passion for both *coding* 👨‍💻 and *physics* 🌌, and plan to start competitive *powerlifting* 🏋️‍♂️ (163/118/160kg@97kg) before I turn 16. 
+Hello! I'm _Peter Bossev_, a 15 y/o highschool _sophomore_ in the USA. I have a strong passion for both _coding_ 👨‍💻 and _physics_ 🌌, and I do _Science Olympiad_ alongside _Track & Field_
 
-In my free time, you can usually find me playing *video games* 🎮, coding something, or just learning about topics that interest me. 
+In my free time, you can usually find me playing _video games_ 🎮, lifting weights, or just learning about topics that interest me.
 
 Here are some technologies that I've used in the past:
 
