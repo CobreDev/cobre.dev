@@ -31,4 +31,8 @@ Here's a list of the classes I'm taking right now:
 <li>AP U.S. History</li>
 </ul>
 
+<<<<<<< HEAD
 And feel free to check out some of my _photography_ at <a href="https://pbsv.photo/" class="arrow-external">pbsv.photo</a>, or on <a href="https://www.instagram.com/pbsv.photo/" class="arrow-external">instagram</a>.
+=======
+And here's what I'm doing <a href="/now/"><em>now</em></a>.
+>>>>>>> 4b024a57befd3c2eb2fb960715cce8e2c813d293
