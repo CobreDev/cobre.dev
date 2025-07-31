@@ -24,15 +24,19 @@
     "links": [
         {
             "name": "Github 🐙",
-            "url": "https://github.com/Zlushiie"
+            "url": "https://github.com/pbossev"
         },
         {
             "name": "Twitter 🐤",
-            "url": "https://twitter.com/zlushiie"
+            "url": "https://twitter.com/pbossev"
         },
         {
             "name": "Gmail 📮",
             "url": "mailto:peterbossev@gmail.com"
+        },
+        {
+            "name": "Instagram 📷",
+            "url": "https://www.instagram.com/pbossev/"
         }
     ]
 }

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 :root {
     --red: #ff453a;
     --orange: #ff9f0a;
@@ -10,11 +12,12 @@
     --blue: #0a84ff;
     --purple: #df5af2;
     --pink: #ff375f;
+    font-family: 'Fira Code', monospace;
 }
 
 @layer base {
     h1 {
-        @apply text-xl;
+        @apply text-2xl;
     }
 
     h2 {
@@ -73,12 +76,43 @@
     }
 }
 
-
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @apply gap-6
+    gap: 1.5rem;
+}
+
+tr td {
+    padding-right: 1rem;
+}
+
+table {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    white-space: nowrap;
+}
+
+thead {
+    border-bottom-width: 1px;
+    @apply border-stone-700;
+}
+
+div:has(> table) {
+    overflow-x: auto;
+}
+
+.gold {
+    background-color: rgba(255, 215, 0, .2);
+}
+
+.silver {
+    background-color: rgba(192, 192, 192, .2);
+}
+
+.bronze {
+    background-color: rgba(205, 127, 50, .2);
 }
 
 .flutter {
@@ -183,11 +217,11 @@ NEVER EVER TOUCH THIS CODE
 */
 
 /* latin-ext */
-@font-face {
+/* @font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4Ep0.woff2) format('woff2');
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+} */

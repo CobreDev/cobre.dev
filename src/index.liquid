@@ -7,29 +7,31 @@ layout: base.liquid
     <h1>Peter Bossev
       <span class="wave">👋</span>
     </h1>
-  {% comment %} <a href="{{ '/assets/CV.pdf' | url }}" class="text-xl">CV</a> {% endcomment %}
+    <h1>
+      <a href="https://raw.githubusercontent.com/pbossev/CV/main/CV.pdf" class="text-2xl">CV 📕</a>
+    </h1>
   </div>
   <p>A highschool student with a passion for
-    <em>coding</em>
-    👨‍💻                                                                                                                                                                                   
+    <em>tech</em>
+    💻                                                                                                                                                                                      
     and
-    <em>physics</em>
-    🌌. Read more
+    <em>math</em>
+    🧮. Read more
     <a href="/about/">about me</a>.
   </p>
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   {% comment %} <div class="shrink-0">
-        <h2 class="text-stone-400 mb-2 text-sm">Notes 📝</h2>
-        <div class="space-y-2">
-          {%- for note in site.notes -%}
-            <div class="row">
-              <a href="{{ note.url }}">{{ note.class }}</a>
-              <p>{{ note.fsize }}</p>
-            </div>
-          {%- endfor -%}
-        </div>
-    </div> {% endcomment %}
+                    <h2 class="text-stone-400 mb-2 text-sm">Notes 📝</h2>
+                    <div class="space-y-2">
+                      {%- for note in site.notes -%}
+                        <div class="row">
+                          <a href="{{ note.url }}">{{ note.class }}</a>
+                          <p>{{ note.fsize }}</p>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+          </div> {% endcomment %}
   <div>
     <h2 class="text-stone-400 mb-2 text-sm">Projects 🛠️</h2>
     <div class="space-y-2">
@@ -62,7 +64,14 @@ layout: base.liquid
 <div>
   <h2 class="mb-2">Contact 📫</h2>
   <p>You can reach me at
-    <a href="mailto:peterbossev@gmail.com" class="green arrow-external">peterbossev@gmail.com</a>. Here are my
-    <a href="/links/" class="green">links</a>.
+    <a href="mailto:peterbossev@gmail.com" class="green arrow-external">peterbossev@gmail.com</a>.
+  {% comment %} , or follow me elsewhere on the internet {% endcomment %}
   </p>
+{% comment %} <ul class="columns-1 pl-8 pt-4">
+                                    {%- for link in site.links -%}
+                                      <li class="pb-2">
+                                        <a href="{{ link.url }}">{{ link.name }}</a>
+                                      </li>
+                                    {%- endfor -%}
+  </ul> {% endcomment %}
 </div>

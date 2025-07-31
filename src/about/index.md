@@ -3,9 +3,9 @@ title: About me 🙋‍♂️
 layout: subpage.liquid
 ---
 
-Hello! I'm *Peter Bossev*, a 15 y/o highschool *sophomore* in the USA. I have a strong passion for both *coding* 👨‍💻 and *physics* 🌌, and plan to start competitive *powerlifting* 🏋️‍♂️ (163/118/160kg@97kg) before I turn 16. 
+Hello! I'm _Peter Bossev_, a 16 y/o highschool _senior_ in the USA. I have a strong passion for both _tech_ 💻 and _math_ 🧮, and plan to go to college for _Electrical Engineering_ next year.
 
-In my free time, you can usually find me playing *video games* 🎮, coding something, or just learning about topics that interest me. 
+In my free time, you can usually find me playing _video games_ 🎮, coding something, taking photos, or just learning about topics that interest me.
 
 Here are some technologies that I've used in the past:
 
@@ -21,14 +21,14 @@ Here are some technologies that I've used in the past:
 <li><a href="https://www.latex-project.org/" class="latex arrow-external">LaTeX</a></li>
 </ul>
 
-Here's a list of the AP classes I'm taking right now:
+Here's a list of the classes I'm taking right now:
 
 <ul>
-<li>AP Physics C: E&M</li>
-<li>AP Physics C: Mechanics</li>
-<li>AP Biology</li>
-<li>AP World History: Modern</li>
-<li>AP Calculus BC</li>
+<li>MATH-312 Calculus IV at Indiana University</li>
+<li>MATH-343 Intro to Differential Equation I</li>
+<li>AP Environmental Science</li>
+<li>AP Language and Composition</li>
+<li>AP U.S. History</li>
 </ul>
 
-And here's what I'm doing <a href="/now/"><em>now</em></a>.
+And feel free to check out some of my _photography_ at <a href="https://pbsv.photo/" class="arrow-external">pbsv.photo</a>, or on <a href="https://www.instagram.com/pbsv.photo/" class="arrow-external">instagram</a>.
