@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
 
 :root {
     --red: #ff453a;
@@ -12,7 +12,10 @@
     --blue: #0a84ff;
     --purple: #df5af2;
     --pink: #ff375f;
-    font-family: 'Fira Code', monospace;
+}
+
+body {
+    font-family: monospace;
 }
 
 @layer base {
@@ -23,16 +26,43 @@
     h2 {
         @apply text-lg;
     }
+
+    html {
+        font-size: 16px;
+        /* base (mobile) */
+    }
+
+    @screen sm {
+        html {
+            font-size: 17px;
+        }
+    }
+
+    @screen md {
+        html {
+            font-size: 18px;
+        }
+    }
+
+    @screen lg {
+        html {
+            font-size: 19px;
+        }
+    }
+
+    @screen xl {
+        html {
+            font-size: 20px;
+        }
+    }
+
+    @screen 2xl {
+        html {
+            font-size: 21px;
+        }
+    }
 }
 
-/* .animate {
-    --sal-duration: 600ms;
-    --sal-easing: 'ease-out-back';
- } */
-
-/*.dir {
-    color: var(--green);
-} */
 .wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
@@ -96,7 +126,7 @@ table {
 
 thead {
     border-bottom-width: 1px;
-    @apply border-stone-700;
+    @apply border-zinc-700;
 }
 
 div:has(> table) {
@@ -161,16 +191,19 @@ div:has(> table) {
 }
 
 small {
-    @apply text-stone-500;
+    @apply text-zinc-500;
 }
 
 ul {
     list-style: none;
-    @apply lg:columns-2;
-    @apply xl:columns-3;
+    @apply lg:columns-2 xl:columns-3;
 }
 
-ul li:before {
+ul li {
+    @apply break-inside-avoid;
+}
+
+ul li::before {
     content: '→ ';
     color: var(--green);
 }
@@ -179,7 +212,8 @@ ul li:before {
     color: var(--green);
 }
 
-em {
+em,
+strong {
     color: var(--green);
 }
 
@@ -188,7 +222,7 @@ a:link {
 }
 
 a {
-    @apply text-stone-300;
+    @apply text-zinc-300;
     text-decoration-color: transparent;
     text-decoration: underline;
     transition: all 0.3s ease;
@@ -198,9 +232,9 @@ a:visited {
     text-decoration-color: var(--purple);
 }
 
-a:hover {
+/* a:hover {
     text-decoration-color: var(--red);
-}
+} */
 
 /*
 Arrows
@@ -209,19 +243,3 @@ Arrows
 .arrow-external:after {
     content: '↗';
 }
-
-
-
-/* 
-NEVER EVER TOUCH THIS CODE 
-*/
-
-/* latin-ext */
-/* @font-face {
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4Ep0.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-} */

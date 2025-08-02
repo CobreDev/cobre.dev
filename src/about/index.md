@@ -3,9 +3,9 @@ title: About me 🙋‍♂️
 layout: subpage.liquid
 ---
 
-Hello! I'm _Peter Bossev_, a 16 y/o highschool _senior_ in the USA. I have a strong passion for both _tech_ 💻 and _math_ 🧮, and plan to go to college for _Electrical Engineering_ next year.
+Hello! I'm **Peter Bossev**, a 16 y/o **highschool senior** in the USA. I have a strong passion for both **tech** 💻 and **math** 🧮, and plan to go to college for **Electrical Engineering** next year.
 
-In my free time, you can usually find me playing _video games_ 🎮, coding something, taking photos, or just learning about topics that interest me.
+In my free time, you can usually find me playing **video games** 🎮, coding something, taking photos, or just learning about topics that interest me.
 
 Here are some technologies that I've used in the past:
 
@@ -31,4 +31,4 @@ Here's a list of the classes I'm taking right now:
 <li>AP U.S. History</li>
 </ul>
 
-And feel free to check out some of my _photography_ at <a href="https://pbsv.photo/" class="arrow-external">pbsv.photo</a>, or on <a href="https://www.instagram.com/pbsv.photo/" class="arrow-external">instagram</a>.
+And feel free to check out some of my **photography** at <a href="https://pbsv.photo/" class="arrow-external">pbsv.photo</a>, or on <a href="https://www.instagram.com/pbsv.photo/" class="arrow-external">instagram</a>.
