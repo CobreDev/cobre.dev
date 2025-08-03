@@ -7,9 +7,9 @@ layout: base.liquid
     <h1>Peter Bossev
       <span class="wave">👋</span>
     </h1>
-    <h1>
+    {% comment %} <h1>
       <a href="https://raw.githubusercontent.com/pbossev/CV/main/CV.pdf" class="text-2xl">CV 📕</a>
-    </h1>
+    </h1> {% endcomment %}
   </div>
   <p>A highschool student with a passion for
     <strong>tech</strong>
@@ -22,16 +22,16 @@ layout: base.liquid
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   {% comment %} <div class="shrink-0">
-                                                                        <h2 class="text-zinc-400 mb-2 text-sm">Notes 📝</h2>
-                                                                        <div class="space-y-2">
-                                                                          {%- for note in site.notes -%}
-                                                                            <div class="row">
-                                                                              <a href="{{ note.url }}">{{ note.class }}</a>
-                                                                              <p>{{ note.fsize }}</p>
-                                                                            </div>
-                                                                          {%- endfor -%}
-                                                                        </div>
-                                    </div> {% endcomment %}
+    <h2 class="text-zinc-400 mb-2 text-sm">Notes 📝</h2>
+    <div class="space-y-2">
+      {%- for note in site.notes -%}
+        <div class="row">
+          <a href="{{ note.url }}">{{ note.class }}</a>
+          <p>{{ note.fsize }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div> {% endcomment %}
   <div>
     <h2 class="text-zinc-400 mb-2 text-sm">Projects 🛠️</h2>
     <div class="space-y-2">
