@@ -4,15 +4,15 @@ layout: base.liquid
 ---
 
 <div class="flex flex-col justify-center text-center items-center gap-4">
-  <div class="flex flex-col justify-center text-center items-center gap-4 my-8">
+  <div class="flex flex-col justify-center text-center items-center gap-4 mt-8 mb-4">
     <img
       src="{{ '/assets/img/pfp.png' | url }}"
       alt="A picture of me"
-      class="rounded-2xl w-32 h-32">
+      class="w-32 h-32 border-zinc-500 border">
     <h1>Peter Bossev</h1>
     <p class="text-zinc-400">Student 📚</p>
   </div>
   {%- for link in site.links -%}
-    <a href="{{ link.url }}" class="no-underline w-full border rounded-lg p-4 border-zinc-500 hover:border-zinc-200">{{ link.name }}</a>
+    <a href="{{ link.url }}" class="no-underline w-full border p-4 border-zinc-500 hover:border-zinc-200">{{ link.name }}</a>
   {%- endfor -%}
 </div>

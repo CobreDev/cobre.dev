@@ -5,7 +5,7 @@ layout: subpage.liquid
 
 Hello! I'm **Peter Bossev**, a 16 y/o **highschool senior** in the USA. I have a strong passion for both **tech** 💻 and **math** 🧮, and plan to go to college for **Electrical Engineering** next year.
 
-In my free time, you can usually find me playing **video games** 🎮, coding something, taking photos, or just learning about topics that interest me.
+In my free time, you can usually find me playing **video games** 🎮, **coding** something, taking **photos**, or just learning about topics that interest me.
 
 Here are some technologies that I've used in the past:
 
