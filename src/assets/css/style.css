@@ -225,11 +225,15 @@ a {
     @apply text-zinc-300;
     text-decoration-color: transparent;
     text-decoration: underline;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 a:visited {
     text-decoration-color: var(--purple);
+}
+
+a:hover {
+    @apply brightness-75;
 }
 
 /* a:hover {
