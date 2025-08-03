@@ -2,7 +2,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <link
+    rel="preload"
+    href="{{ '/assets/css/style.css' | url }}"
+    as="style">
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/style.css' | url }}"
+    media="print"
+    onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"></noscript>
   <meta name="description" content="Peter Bossev's portfolio site.">
   <link
     rel="apple-touch-icon"

@@ -9,7 +9,7 @@
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/style.css -o _site/assets/css/style.css --watch",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/assets/css/style.css -o _site/assets/css/style.css"
+    "build:css": "tailwindcss -i src/assets/css/style.css -o _site/assets/css/style.css --minify"
   },
   "keywords": [],
   "author": "",
