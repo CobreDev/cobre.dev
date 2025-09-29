@@ -2,8 +2,14 @@
 node_modules/
 _site/
 
+# previews
+src/content/**/*.webp
+
 # Optional npm cache directory
 .npm
 
 # dotenv environment variables file
 .env
+
+# macOS System files
+.DS_Store
