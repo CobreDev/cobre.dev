@@ -16,7 +16,8 @@
 }
 
 body {
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'JetBrains Mono', monospace;
 }
 
 @layer base {
@@ -223,7 +224,7 @@ strong {
 }
 
 a:link {
-    text-decoration-color: var(--blue);
+    text-decoration-color: var(--theme);
 }
 
 a {
@@ -235,6 +236,14 @@ a {
 
 a:visited {
     text-decoration-color: var(--purple);
+}
+
+a:hover {
+    @apply brightness-75;
+}
+
+.underline-email, .underline-email:visited {
+    text-decoration-color: var(--blue) !important;
 }
 
 a:hover {

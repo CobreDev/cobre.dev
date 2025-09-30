@@ -24,19 +24,23 @@
     "links": [
         {
             "name": "Github 🐙",
-            "url": "https://github.com/pbossev"
+            "url": "https://github.com/cobredev"
         },
         {
             "name": "Twitter 🐤",
-            "url": "https://twitter.com/pbossev"
+            "url": "https://twitter.com/cobredev"
         },
         {
-            "name": "Gmail 📮",
-            "url": "mailto:peterbossev@gmail.com"
+            "name": "Email 📤",
+            "url": "mailto:cobre@cobre.dev"
+        },
+        {
+            "name": "Photography Portfolio 🖼️",
+            "url": "https://cobre.photos/"
         },
         {
             "name": "Instagram 📷",
-            "url": "https://www.instagram.com/pbossev/"
+            "url": "https://www.instagram.com/cobre.dev/"
         }
     ]
 }
