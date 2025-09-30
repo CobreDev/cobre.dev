@@ -10,7 +10,8 @@
     --blue: #0a84ff;
     --purple: #df5af2;
     --pink: #ff375f;
-    --theme: #e93323;
+    --theme: #C8701A;
+    --photos: #e93323;
 }
 
 body {
@@ -239,6 +240,10 @@ a:hover {
 
 .underline-email, .underline-email:visited {
     text-decoration-color: var(--blue) !important;
+}
+
+.photos {
+    text-decoration-color: var(--photos) !important;
 }
 
 a:hover {

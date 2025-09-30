@@ -4,18 +4,12 @@ layout: base.liquid
 ---
 <div class="space-y-2">
   <div class="row mt-8 mb-4">
-    <h1>cobre
+    <h1><strong>cobre</strong>  
       <span class="wave">👋</span>
     </h1>
   </div>
-  <p>Just a guy with a passion for
-    <strong>photography</strong>
-    📸                                                                                                                                                                                                   
-    and
-    <strong>tech</strong>
-    💻.</p><p> Check out my
-    <a class="arrow-external" href="https://cobre.photos/">photography portfolio</a>.
-  </p>
+  <p>Just a guy with a passion for <strong>photography</strong> 📸 and <strong>tech</strong> 💻.</p>
+    <p> Check out my <a class="arrow-external photos" href="https://cobre.photos/">photography portfolio</a>.</p>
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   <div>
@@ -41,9 +35,17 @@ layout: base.liquid
           <div class="row">
             {%- assign link = other.data.url | default: other.url -%}
             {%- if other.data.url -%}
-              <a class="arrow-external" href="{{ link }}">{{ other.data.title }}</a>
+              {%- if link contains "cobre.photos" -%}
+                <a class="arrow-external photos" href="{{ link }}">{{ other.data.title }}</a>
+              {%- else -%}
+                <a class="arrow-external" href="{{ link }}">{{ other.data.title }}</a>
+              {%- endif -%}
             {%- else -%}
-              <a href="{{ link }}">{{ other.data.title }}</a>
+              {%- if link contains "cobre.photos" -%}
+                <a class="photos" href="{{ link }}">{{ other.data.title }}</a>
+              {%- else -%}
+                <a href="{{ link }}">{{ other.data.title }}</a>
+              {%- endif -%}
             {%- endif -%}
             <small class="text-zinc-500">{{ other.data.dateLabel }}</small>
           </div>
