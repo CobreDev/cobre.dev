@@ -19,7 +19,8 @@ layout: base.liquid
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   <div>
-    <h2 class="text-zinc-400 mb-2 text-sm">Projects 🛠️</h2>
+    <h2 class="text-zinc-400 mb-2 text-sm">Projects 🚧</h2>
+
     <div class="space-y-2">
       {%- for project in collections.projects -%}
         <div>
@@ -33,12 +34,17 @@ layout: base.liquid
     </div>
   </div>
   <div>
-    <h2 class="text-zinc-400 mb-2 text-sm">Extracurriculars 🎓</h2>
+    <h2 class="text-zinc-400 mb-2 text-sm">Other thigns I'm working on 🛠️</h2>
     <div class="space-y-2">
       {%- for extracurricular in collections.extracurriculars -%}
         <div>
           <div class="row">
-            <a href="{{ extracurricular.url }}">{{ extracurricular.data.title }}</a>
+            {%- assign link = extracurricular.data.url | default: extracurricular.url -%}
+            {%- if extracurricular.data.url -%}
+              <a class="arrow-external" href="{{ link }}">{{ extracurricular.data.title }}</a>
+            {%- else -%}
+              <a href="{{ link }}">{{ extracurricular.data.title }}</a>
+            {%- endif -%}
             <small class="text-zinc-500">{{ extracurricular.data.dateLabel }}</small>
           </div>
           <p class="text-zinc-400">{{ extracurricular.data.description }}</p>
