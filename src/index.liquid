@@ -36,18 +36,18 @@ layout: base.liquid
   <div>
     <h2 class="text-zinc-400 mb-2 text-sm">Other thigns I'm working on 🛠️</h2>
     <div class="space-y-2">
-      {%- for extracurricular in collections.extracurriculars -%}
+      {%- for other in collections.others -%}
         <div>
           <div class="row">
-            {%- assign link = extracurricular.data.url | default: extracurricular.url -%}
-            {%- if extracurricular.data.url -%}
-              <a class="arrow-external" href="{{ link }}">{{ extracurricular.data.title }}</a>
+            {%- assign link = other.data.url | default: other.url -%}
+            {%- if other.data.url -%}
+              <a class="arrow-external" href="{{ link }}">{{ other.data.title }}</a>
             {%- else -%}
-              <a href="{{ link }}">{{ extracurricular.data.title }}</a>
+              <a href="{{ link }}">{{ other.data.title }}</a>
             {%- endif -%}
-            <small class="text-zinc-500">{{ extracurricular.data.dateLabel }}</small>
+            <small class="text-zinc-500">{{ other.data.dateLabel }}</small>
           </div>
-          <p class="text-zinc-400">{{ extracurricular.data.description }}</p>
+          <p class="text-zinc-400">{{ other.data.description }}</p>
         </div>
       {%- endfor -%}
     </div>
