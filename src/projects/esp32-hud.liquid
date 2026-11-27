@@ -1,0 +1,12 @@
+---
+title: ESP32 HUD 🖥️
+date: 2026-11-24
+dateLabel: November 2026
+description: A tiny round desk display for my Mac. <a href="https://github.com/CobreDev/esp32-hud" class="flutter arrow-external">GitHub</a>
+---
+
+<div class="flex flex-col gap-y-4">
+  <p>A desk HUD built from a 1.28" round GC9A01 display and an ESP32-S3-Zero, fed over USB.</p>
+  <h2>How it works</h2>
+  <p>A Swift menu bar app on the Mac renders every frame, previews it in its popover, and sends it to the board as a JPEG. The ESP32 firmware just receives, decodes and draws, so changing the design never needs a reflash.</p>
+</div>

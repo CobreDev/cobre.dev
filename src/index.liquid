@@ -9,14 +9,14 @@ layout: base.liquid
     </h1>
   </div>
   <p>Just a guy with a passion for <strong>photography</strong> 📸 and <strong>tech</strong> 💻.</p>
-    <p> Check out my <a class="arrow-external photos" href="https://cobre.photos/">photography portfolio</a>.</p>
+  <p>Lately that means Pebble apps ⌚, 3D printers 🖨️, self-hosted tools on my home server 🗄️, and dashboards for racing 🏁. Check out my <a class="arrow-external photos" href="https://cobre.photos/">photography portfolio</a>.</p>
 </div>
 <div class="flex flex-col gap-2 space-y-8 w-full justify-between xl:flex-row xl:space-y-0 xl:gap-8 xl:space-x-8">
   <div>
     <h2 class="text-zinc-400 mb-2 text-sm">Projects 🚧</h2>
 
     <div class="space-y-2">
-      {%- for project in collections.projects -%}
+      {%- for project in collections.projects reversed -%}
         <div>
           <div class="row">
             <a href="{{ project.url }}">{{ project.data.title }}</a>
