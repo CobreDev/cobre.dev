@@ -1,0 +1,15 @@
+---
+title: Karting Hub 🏁
+date: 2026-10-22
+dateLabel: October 2026 - present
+description: A lap-time dashboard for endurance kart races. <a href="https://karting-hub.cobre.dev/" class="flutter arrow-external">Visit</a>
+---
+
+<div class="flex flex-col gap-y-4">
+  <p>Endurance kart races hand you a pile of per-kart timing exports and no easy way to see who actually drove well. Karting Hub fixes that: upload the <code>.txt</code> exports from Race Monitor, say which driver drove which laps, and share one link.</p>
+  <h2>What it does</h2>
+  <p>Each race page shows a driver table (best lap, average, consistency), a lap-time chart, and a lap-by-lap list for each team. Drivers and teams are saved once and reused across races, and race links get a proper preview card when shared in iMessage or Slack.</p>
+  <h2>How it's built</h2>
+  <p>No runtime dependencies: one Node server, plain browser JavaScript, and JSON files on disk, shipped as a Docker image that runs on my Unraid server. There's also a native SwiftUI iOS app that talks to the same server.</p>
+  <p>Source on <a href="https://github.com/CobreDev/Karting-Hub" class="flutter arrow-external">GitHub</a>.</p>
+</div>
